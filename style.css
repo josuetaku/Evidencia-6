@@ -4,17 +4,11 @@
 }
 
 body{
-    padding: 250px;
+    padding-top: 250px;
     text-align: center;
+    font-family:Georgia, 'Times New Roman', Times, serif;
 }
 
-
-a{
-    text-decoration: none;
-    color: #f06666;
-    cursor: pointer;
-}
-
-a:hover{
-    color: #fd3333;
+#btn{
+    font-size: 3em;
 }

@@ -1,9 +1,8 @@
-const months = ['Enero', 'Febrero', 'Marzo', 'Abril', 'Mayo', 'Junio', 'Julio', 'Agosto', 'Septiembre', 'Octubre', 'Noviembre', 'Diciembre'];
+const btn = document.getElementById('btn');
 
-let month = document.getElementById('a');
+btn.addEventListener('click', msjWelcome);
 
-month.addEventListener('click', msj);
-
-function msj() {
-    alert(months[6]);
+function msjWelcome() {
+    let name = prompt('Inserte su nombre: ')
+    alert('Bienvenido/a ' + name + ', al sistema de consulta.')
 }
