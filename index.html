@@ -5,33 +5,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../../bootstrap-5.3.0-dist/css/bootstrap.css">
     <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
-    <title>Tabla de multiplicar</title>
+    <title>Tablas de multiplicar</title>
 </head>
-<body class="bg-dark">
-    <div class="text-body-emphasis">
-        <p>TABLAS DE MULTIPLICAR</p>
+<body class="bg-light">
+    <div class="container-title">
+        <h1>TABLAS DE MULTIPLICACION</h1>
     </div>
-    <div class="mb-3">
-        <label class="form-label">Inserte un numero del 1 al 10 para generar su respectiva tabla de multiplicacion</label><br><br>
-        <button type="button" class="btn btn-light" style="font-size: 30px; color: rgb(0, 0, 0); font-weight: bold;" id="btn">INSERTAR</button>
+
+    <div class="form-floating">
+        <select id="select" class="form-select" id="floatingSelect" aria-label="Floating label select example">
+          <option value="0" selected>Observa la lista de opciones</option>
+          <option value="1"><p>Tabla del 1</p></option>
+          <option value="2"><p>Tabla del 2</p></option>
+          <option value="3"><p>Tabla del 3</p></option>
+          <option value="4"><p>Tabla del 4</p></option>
+          <option value="5"><p>Tabla del 5</p></option>
+          <option value="6"><p>Tabla del 6</p></option>
+          <option value="7"><p>Tabla del 7</p></option>
+          <option value="8"><p>Tabla del 8</p></option>
+          <option value="9"><p>Tabla del 9</p></option>
+          <option value="10"><p>Tabla del 10</p></option>
+        </select>
+        <label for="floatingSelect">Selecciona una tabla de multiplicacion</label>
       </div>
 
-      <div class="modal" tabindex="-1" id="modal">
-        <div class="modal-dialog">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h5 class="modal-title" id="modalTitle"></h5>
-              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" id="close"></button>
-            </div>
-            <div class="modal-body">
-                <p id="textModal"></p>
-            </div>
-            <div class="modal-footer">
-              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" id="btnClose">Cerrar</button>
-            </div>
-          </div>
-        </div>
+      <div id="result">
+
       </div>
 <script src="script.js"></script>
 </body>
