@@ -5,21 +5,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../../bootstrap-5.3.0-dist/css/bootstrap.css">
     <link rel="stylesheet" href="style.css">
-    <title>Formulario</title>
+    <script src="script.js"></script>
+    <title>Tabla de multiplicar</title>
 </head>
-<body class="bg-body-tertiary">
-   <div class="container">
-    <div class="container-form">
-        <form>
-            <div class="mb-3">
-              <label class="form-label" style="font-weight: bold; font-size: 1.5em;">Inserte su edad</label>
-              <input type="text" class="form-control" id="input">
-              <div id="emailHelp" class="form-text">Nota: Solo debe colocar su edad en numeros.</div>
-            </div>
-            <button type="submit" class="btn btn-primary">Comprobar</button>
-            <script src="script.js"></script>
-          </form>
+<body class="bg-dark">
+    <div class="text-body-emphasis">
+        <p>TABLAS DE MULTIPLICAR</p>
     </div>
-   </div> 
+    <div class="mb-3">
+        <label class="form-label">Inserte un numero del 1 al 10 para generar su respectiva tabla de multiplicacion</label><br><br>
+        <button type="button" class="btn btn-light" style="font-size: 30px; color: rgb(0, 0, 0); font-weight: bold;" id="btn">INSERTAR</button>
+      </div>
+
+      <div class="modal" tabindex="-1" id="modal">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="modalTitle"></h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" id="close"></button>
+            </div>
+            <div class="modal-body">
+                <p id="textModal"></p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" id="btnClose">Cerrar</button>
+            </div>
+          </div>
+        </div>
+      </div>
+<script src="script.js"></script>
 </body>
 </html>

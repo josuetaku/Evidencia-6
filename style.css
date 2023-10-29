@@ -1,17 +1,36 @@
 *{
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
 }
 
-body{
-    display: flex;
+.mb-3{
+    padding: 20px 0px 20px 0px;
+    margin: 100px;
     text-align: center;
 }
 
-.container{
-    margin: 50px 400px 0px 400px;
+label{
+    color: white;
+    font-family: 'Segoe UI';
+    font-weight: bolder;
+    font-size: 40px;
 }
 
-input{
+p{
+    color: white;
+    font-family: 'Segoe UI';
+    font-weight: bolder;
+    font-size: 4em;
+    padding: 30px 0px 0px 0px;
     text-align: center;
+}
+
+.modal-body{
+    font-size: 10px;
+}
+
+.modal-body > p{
+    color: black;
+    font-size: 40px;
 }
