@@ -1,8 +1,10 @@
-const btn = document.getElementById('btn');
+const num = document.getElementById('input');
+const btn = document.querySelector('button');
 
-btn.addEventListener('click', msjWelcome);
-
-function msjWelcome() {
-    let name = prompt('Inserte su nombre: ')
-    alert('Bienvenido/a ' + name + ', al sistema de consulta.')
-}
+btn.addEventListener('click', function compEdad(){
+    if (num.value >= 18) {
+        alert('Bienvenido, usted tiene acceso a todos nuestros servicios.');
+    } else {
+        alert('Bienvenido, usted tiene acceso a servicios limitados.');
+    }   
+});
